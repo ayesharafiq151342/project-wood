@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+  
+  <header class="header border">
+    <input type="checkbox" class="checkbox" id="click" hidden>
+    <div class="sidebar">
+        <label for="click">
+         <div class="toggle">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+         </div>
+        </label>
+        
+    </div>
+  <!-- =============================================navbar section================================== -->
+        <nav class="nav">
+            <div class="nav-image"> 
+                <img class="image-nav" src="images/R.png" >
+                
+                <h1 style="color: #0f0f0f;"><span style="color:#68481c">W</span>izards</h1>
+            </div>
+           
+            <ul class="nav-items">
+                
+                <li class="nav-items-list"><a href="../home/index.html" class="nav-items-link">Home</a></li>
+                <li class="nav-items-list"><a href="../team/team.html" class="nav-items-link">Team</a></li>
+                <li class="nav-items-list"><a href="../shop/workshop.html" class="nav-items-link">Shop</a></li>
+                 
+                <li class="nav-items-list"><a href="../contect/contect.html" class="nav-items-link">contact</a></li>
+             
+            
+        <li>
+          <button class="siginin"onclick="windowopen()" >
+            <span style="background-color:#68481c;">Sign in</span>
+            <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"/>
+            </svg>
+          </button>
+          
+        </li>
+        <li>
+          <button onclick="windowoopen()"> 
+            <span style="background-color:#68481c;">Sign Out</span>
+            <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"/>
+            </svg>
+          </button>
+  
+       
+
+        </li>
+        <!-- <li>
+    
+
+                <button id="button" class="black" style="text-align: center;">Mode</button>
+        
+        </li>
+          
+          
+            </ul></nav> -->
+        </header>
+    </header>
+    <main class="main bd-grid owl-carousel">
+        <article class="card">
+          <div class="card__img">
+            <img src="./images/10.png" alt="Product Image 1">
+          </div>
+          <div class="card__name">
+            <p onclick="togglePopup('popup-1')" style="color: white;">Add to cart</p>
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+            <div>
+              <span class="card__preci card__preci--before">$990.00</span>
+              <span class="card__preci card__preci--now">$749.00</span>
+            </div>
+            <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+        </article>
+        
+        <article class="card">
+          <div class="card__img">
+            <img src="./images/5a.png" alt="Product Image 2">
+          </div>
+          <div class="card__name">
+            <p onclick="togglePopup('popup-2')" style="color: white;">Add to cart</p>
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+            <div>
+              <span class="card__preci card__preci--before">$990.00</span>
+
+              <span class="card__preci card__preci--now">$890.00</span>
+            </div>
+            <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+        </article>
+        
+        <article class="card">
+          <div class="card__img">
+            <img src="./images/9a.png" alt="Product Image 3">
+          </div>
+          <div class="card__name">
+            <p onclick="togglePopup('popup-3')" style="color: white;" >Add to cart</p>
+          </div>
+          <div class="card__precis">
+            <a href="" class="card__icon"><ion-icon name="heart-outline"></ion-icon></a>
+            <div>
+              <span class="card__preci card__preci--before">$990.00</span>
+              <span class="card__preci card__preci--now">$749.00</span>
+            </div>
+            <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+        </article>
+
+        <!-- Add more articles as needed -->
+
+        <div class="popup" id="popup-1">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
+            <h1 style="text-align: center;">Product Details</h1>
+            <div class="cont">
+              <div class="cont-back">.</div>
+              <div class="bike">
+                <img class="img1" src="./images/10.png" alt="Detailed Product Image 1">
+              </div>
+              <div class="heading">
+                <div class="div1">
+                  <h1>Indian wood</h1>
+                  <br>
+                  <div class="parents">
+                    <div class="parent">
+                      <i class="fa-solid fa-plus" onclick="increment('First_Num_1')" style="color: #806452;"></i>
+                      <div id="First_Num_1" class="num-display">1</div>
+                      <i class="fa-solid fa-minus" onclick="decrement('First_Num_1')" style="color: #806452;"></i>
+                    </div>
+                  </div><br>
+                  <h1 class="price" id="price1">$890.00</h1>
+                  <br>
+                  <div class="total">Sub total &nbsp;<input type="number" id="subtotal1" readonly></div>
+                  <br>
+                  <button type="submit" onclick="windowopen1()" class="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup" id="popup-2">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
+            <h1 style="text-align: center;">Product Details</h1>
+            <div class="cont">
+              <div class="cont-back">.</div>
+              <div class="bike">
+                <img class="img1" src="./images/5a.png" alt="Detailed Product Image 2">
+              </div>
+              <div class="heading">
+                <div class="div1">
+                  <h1>Uk wood</h1><br>
+                  <div class="parents">
+                    <div class="parent">
+                      <i class="fa-solid fa-plus" onclick="increment('First_Num_2')" style="color: #806452;"></i>
+                      <div id="First_Num_2" class="num-display">1</div>
+                      <i class="fa-solid fa-minus" onclick="decrement('First_Num_2')" style="color: #806452;"></i>
+                    </div>
+                  </div>
+                  <br>
+                  <h1 class="price" id="price2">$749.00</h1><br>
+                  <div class="total">Sub total &nbsp;<input type="number" id="subtotal2" readonly></div>
+                  <br>
+                  <button type="submit" class="button" onclick="windowopen1()">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup" id="popup-3">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
+            <h1 style="text-align: center;">Product Details</h1>
+            <div class="cont">
+              <div class="cont-back">.</div>
+              <div class="bike">
+                <img class="img1" src="./images/9a.png" alt="Detailed Product Image 3">
+              </div>
+              <div class="heading">
+                <div class="div1">
+                  <h1>American wood</h1><br>
+                  <div class="parents">
+                    <div class="parent">
+                      <i class="fa-solid fa-plus" onclick="increment('First_Num_3')" style="color: #806452;"></i>
+                      <div id="First_Num_3" class="num-display">1</div>
+                      <i class="fa-solid fa-minus" onclick="decrement('First_Num_3')" style="color: #806452;"></i>
+                    </div>
+                  </div>
+                  <br>
+                  <h1 class="price" id="price3">$749.00</h1><br>
+                  <div class="total">Sub total &nbsp;<input type="number" id="subtotal3" readonly></div>
+                  <br>
+                  <button type="submit" class="button" onclick="windowopen1()">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </main>
+<script>
+  // Owl Carousel settings
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 15,
+    nav: true,
+    items: 4,
+    autoplay: true,
+    autoplayTimeout: 1500,
+    autoplayHoverPause: true,
+    responsive: {
+        0: { items: 1 },
+        574: { items: 2 },
+        600: { items: 2 },
+        800: { items: 3 },
+        1000: { items: 4 },
+    }
+  });
+
+  // Toggle popup visibility
+  function togglePopup(popupId) {
+    document.getElementById(popupId).classList.toggle("active");
+  }
+
+  // Increment quantity
+  function increment(elementId) {
+    var element = document.getElementById(elementId);
+    var value = parseInt(element.innerHTML);
+    value++;
+    element.innerHTML = value;
+    calculateTotal(elementId);
+  }
+
+  // Decrement quantity
+  function decrement(elementId) {
+    var element = document.getElementById(elementId);
+    var value = parseInt(element.innerHTML);
+    if (value > 1) {
+      value--;
+      element.innerHTML = value;
+      calculateTotal(elementId);
+    }
+  }
+
+  // Calculate total price
+  function calculateTotal(elementId) {
+    var elementNumber = elementId.split('_')[2];
+    var numElement = document.getElementById('First_Num_' + elementNumber);
+    var priceElement = document.getElementById('price' + elementNumber);
+    var subtotalElement = document.getElementById('subtotal' + elementNumber);
+    
+    var quantity = parseInt(numElement.innerHTML);
+    var price = parseFloat(priceElement.innerHTML.replace('$', ''));
+    
+    subtotalElement.value = (quantity * price).toFixed(2);
+  }
+  
+     function windowopen1(){
+        window.open("../card/card1.html", "_parent");
+    }
+    function windowoopen() {
+          window.open("../home/index.html", "_parent");
+        }
+</script>
+</body>
+</html>

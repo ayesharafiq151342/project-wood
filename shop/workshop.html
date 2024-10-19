@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooden Workshop</title>
+    <link rel="stylesheet" href="workshop.css">
+
+<body id="body">
+
+    <header class="header border">
+        <input type="checkbox" class="checkbox" id="click" hidden>
+        <div class="sidebar">
+            <label for="click">
+                <div class="toggle">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </label>
+
+        </div>
+        <!-- =============================================navbar section================================== -->
+        <nav class="nav">
+            <div class="nav-image">
+                <img class="image-nav" src="./Assets/Images/logo.png">
+
+                <h1 style="color: #0f0f0f;    background-color: rgb(163,136,112);"><span
+                        style="color:#68481c;    background-color: rgb(163,136,112);">W</span>izards</h1>
+            </div>
+
+            <ul class="nav-items">
+
+                <li class="nav-items-list"><a href="../index.html" class="nav-items-link">Home</a></li>
+                <li class="nav-items-list"><a href="../team/team.html" class="nav-items-link">Team</a></li>
+                <li class="nav-items-list"><a href="../signin/sign.html" class="nav-items-link">Shop</a></li>
+
+                <li class="nav-items-list"><a href="../contect/contect.html" class="nav-items-link">contact</a></li>
+
+
+                <li>
+                    <a href="../signin/sign.html"></a>
+                    <button class="siginin" onclick="windowopen()">
+                        <span style="background-color:#68481c;">Sign in</span>
+                        <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                            <path
+                                d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                        </svg>
+                    </button>
+
+                </li>
+                <li>
+                    <button onclick="windowoopen()">
+                        <span style="background-color:#68481c;">Sign Out</span>
+                        <svg viewBox="-5 -5 110 110" preserveAspectRatio="none" aria-hidden="true">
+                            <path
+                                d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0" />
+                        </svg>
+                    </button>
+
+
+
+                </li>
+                <!-- <li>
+            
+    
+                        <button id="button" class="black" style="text-align: center;">Mode</button>
+                
+                </li> -->
+
+
+            </ul>
+        </nav>
+    </header>
+    </header>
+
+    <!-- --------------------------------main section------------------------------- -->
+    <div class="main">
+        <div class="text">
+            <h1 class="heading1"><span style="color:#68481c">W</span>izards WorkShop</h1>
+
+            <p class="para2">Wood furniture means room furnishings, including cabinets,tables, chairs, beds, sofas,
+                shutters,
+                art objects,wood paneling other than flat wood paneling,</p>
+
+        </div>
+        <div class="picture-links">
+            <div class="picture">
+                <img src="./Assets/Images/background1.jpg" alt="worker" class="back1">
+            </div>
+            <div class="links">
+                <div class="fb">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" color="#000" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="ig">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" color="#000"
+                        fill="none">
+                        <path
+                            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        <path
+                            d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                        <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="vertical-line"></div>
+                <div class="text2">
+                    <h2 class="about">ABOUT US</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------hand wood products----------------------------- -->
+    <!-- <div class="container">
+        <div class="child1"></div>
+        <div class="child2">
+            <h1 class="handmade">Handmade <br> Wood Products</h1>
+            <p class="para3">Handmade wooden items embody a blend of artistry, craftsmanship, and tradition. Each piece is meticulously crafted by skilled artisans who transform raw wood into functional and decorative objects with care and precision</p>
+        </div>
+    </div> -->
+
+    <!-- ------------------------------------Services--------------------------------------- -->
+    <h1 class="servicse-heading"><span style="color: #68481c; ">Our </span> Features</h1>
+
+    <div class="parent">
+        <div class="item item1">
+            <div class="icon">
+                <img src="./Assets/Icons/icons8-settings-96.png" alt="">
+            </div>
+            <div class="title">
+                <h1 class="title-1">Eco Production</h1>
+            </div>
+            <div class="description">
+                <p class="para4">
+                    Eco production in wooden furniture means making furniture in an eco-friendly and sustainable way. It
+                    involves using responsibly sourced wood, minimizing waste, and using non-toxic finishes. </p>
+            </div>
+        </div>
+        <div class="item item1">
+            <div class="icon">
+                <img src="./Assets/Icons/icons8-world-wide-web-96.png" alt="">
+            </div>
+            <div class="title">
+                <h1 class="title-1">Unique Design</h1>
+            </div>
+            <div class="description">
+                <p class="para4">
+                    Wooden furniture with a unique design adds a touch of elegance and warmth to any space. It s crafted
+                    with creativity, using different types of wood, and often incorporates intricate patterns or
+                    artistic details.
+
+                </p>
+            </div>
+        </div>
+        <div class="item item1">
+            <div class="icon">
+                <img src="./Assets/Icons/icons8-paint-96.png" alt="">
+            </div>
+            <div class="title">
+                <h1 class="title-1">Natural Materials</h1>
+            </div>
+            <div class="description">
+                <p class="para4">
+                    Natural Beauty, Modern Aesthetics: Our wooden slabs and decorative accents celebrate the raw beauty
+                    of timber. Whether it s a live-edge coffee table or a minimalist wall sculpture </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------Unique Work Experience----------------------------- -->
+    <h1 class="servicse-heading"><span style="color: #68481c; ">Our</span> Materials</h1>
+
+    <div class="container1">
+        <div class="parent1">
+            <div class="h1">Unique Work Experience</div>
+            <div class="p1">Wooden furniture with a unique design adds a touch of elegance and warmth to any space. It s
+                crafted with creativity, using different types of wood, and often incorporates intricate patterns or
+                artistic details. </div>
+            <div class="img1">
+
+            </div>
+        </div>
+
+        <div class="parent2">
+            <div class="h2">Only Natural Materials</div>
+            <div class="p2">Natural Beauty, Modern Aesthetics: Our wooden slabs and decorative accents celebrate the raw
+                beauty of timber. Whether it s a live-edge coffee table or a minimalist wall sculpture</div>
+            <div class="h2">Eco Production</div>
+            <div class="p2">Eco production in wooden furniture means making furniture in an eco-friendly and sustainable
+                way. It involves using responsibly sourced wood, minimizing waste, and using non-toxic finishes..</div>
+            <div class="p4">
+                <p>Unique Design</p>
+                <img src="./Assets/Icons/icons8-plus-32.png" alt="">
+            </div>
+            <div class="p4">
+                <p>Natural Material</p>
+                <img src="./Assets/Icons/icons8-plus-32.png" alt="">
+            </div>
+            <div class="p4">
+                <p>Eco Production</p><img src="./Assets/Icons/icons8-plus-32.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- ---------------------hand mate------------ -->
+    <h1 class="servicse-heading"><span style="color: #68481c; ">Our </span> Product</h1>
+
+    <div class="container">
+        <div class="child1"></div>
+        <div class="child2">
+            <h1 class="handmade">Handmade <br> Wood Products</h1>
+            <p class="para3">Handmade wooden items embody a blend of artistry, craftsmanship, and tradition. Each piece
+                is meticulously crafted by skilled artisans who transform raw wood into functional and decorative
+                objects with care and precision</p>
+        </div>
+    </div>
+
+    <!-- ------------------------------------Team------------------------------------------- -->
+    <!-- <h1 class="team">Our Team</h1>
+    <p class="t-descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare risus vel tellus tempor tempor. Suspendisse ut
+    lobortis sem, aliquam consequat nisi.</p>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="./Assets/Images/face2.jpg" alt="">
+            <h2 class="name info">Jane Brown</h2>
+            <p class="post info">Manager</p>
+            <p class="num info">0704 - 94 25 49</p>
+            <p class="email info">sara@bosumhus.se</p>
+        </div>
+        <div class="team-member">
+            <img src="./Assets/Images/face3.jpg" alt="">
+            <h2 class="name info">John Smith</h2>
+            <p class="post info">Worker</p>
+            <p class="num info">0704 - 94 25 49</p>
+            <p class="email info">sara@bosumhus.se</p>
+        </div>
+        <div class="team-member">
+            <img src="./Assets/Images/face4.jpg" alt="">
+            <h2 class="name info">Ann Jason</h2>
+            <p class="post info">Designer</p>
+            <p class="num info">0704 - 94 25 49</p>
+            <p class="email info">sara@bosumhus.se</p>
+        </div>
+    </div>
+     -----------------------------------------Trees Image------------------------------- -->
+    <div class="trees-image">
+        <img class="tree" src="./Assets/Images/background4.jpg" alt="">
+    </div>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <img class=" image-footer" style="     background-color: rgb(163,136,112);" src="./Assets/Images/logo.png"
+                alt="">
+
+        </div>
+
+        <div class="footer-center " style=" background-color: #68481c;">
+
+
+            <div class="informtion" style="  background-color: rgb(163,136,112);" ;>
+                <div class="office" style="  background-color: rgb(163,136,112);">
+                    <h1 style="   background-color: rgb(163,136,112);; color: #68481c">
+                        Office
+                    </h1>
+                    <h3 style="  background-color: rgb(163,136,112);">
+                        Paksitan
+                        </h1>
+                        <h3 style="  background-color: rgb(163,136,112);">
+                            1615 State
+                        </h3>
+                </div>
+
+                <div class="office">
+                    <h1 style="background-color: rgb(163,136,112);; color: #68481c">
+                        Contacts
+                    </h1>
+                    <h3 style="  background-color: rgb(163,136,112);">
+                        w@gmial.com
+                    </h3>
+                    <h3 style="  background-color: rgb(163,136,112);">
+                        03124566789
+                    </h3>
+                </div>
+                <div class="office">
+                    <h1 style=" background-color: rgb(163,136,112);; color: #68481c">
+                        Adress
+                    </h1>
+                    <h3 style=" background-color: rgb(163,136,112);">
+                        18763 Streat
+                    </h3>
+                    <h3 style="  background-color: rgb(163,136,112);">
+                        Paksitan
+                    </h3 style="  background-color: rgb(163,136,112);">
+                </div>
+            </div>
+        </div>
+        </div>
+        <a href="../signin/sign.html"></a>
+    </footer>
+    <script>
+        function windowopen() {
+            window.open("../signin/sign.html", "_parent");
+        }
+        function windowoopen() {
+          window.open("../home/index.html", "_parent");
+        }
+    </script>
+
+
+</body>
+
+</html>
